@@ -72,7 +72,7 @@ class CurriculumLearning(CallbackWithConfig):
         # As saved_dataset_index is loaded from state_dict, this only runs when
         # a user explicitly increments the dataset_index and not on any other
         # resumption, including autoresume.
-        train_loader = state._train_dataloader
+        train_loader = state.train_dataloader
         assert isinstance(
             train_loader,
             DataLoader,

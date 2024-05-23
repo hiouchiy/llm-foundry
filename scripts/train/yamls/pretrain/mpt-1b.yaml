@@ -119,7 +119,6 @@ loggers:
     tracking_uri: databricks
     model_registry_uri: databricks-uc
     model_registry_prefix: shared.hiouchiymct
-    # experiment_name: /Users/hiroshi.ouchiyama@databricks.com/mct_experiment3
 
 # loggers:
 #   wandb: {}

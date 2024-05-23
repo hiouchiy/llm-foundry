@@ -117,7 +117,7 @@ callbacks:
 loggers:
   mlflow:
     tracking_uri: databricks
-    experiment_name: /Workspace/Users/hiroshi.ouchiyama@databricks.com/mct_experiment
+    experiment_name: /Workspace/Users/hiroshi.ouchiyama@databricks.com/mct_experiment2
     model_registry_uri: databricks-uc
     model_registry_prefix: shared.hiouchiymct
 

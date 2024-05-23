@@ -107,8 +107,19 @@ callbacks:
 loggers:
   mlflow:
     tracking_uri: databricks
+    experiment_name: /Workspace/Users/hiroshi.ouchiyama@databricks.com/mct_experiment
     model_registry_uri: databricks-uc
     model_registry_prefix: shared.hiouchiymct
+  hf_checkpointer:
+    overwrite: true
+    precision: bfloat16
+    save_folder: dbfs:/databricks/mlflow-tracking/{mlflow_experiment_id}/{mlflow_run_id}/artifacts/checkpoints
+    save_interval: 1ba
+    mlflow_logging_config:
+      task: llm/v1/chat
+      metadata:
+        task: llm/v1/chat
+    mlflow_registered_model_name: mpt-1b-hiouchiy
 
 # loggers:
 #   wandb: {}

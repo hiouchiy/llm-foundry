@@ -103,13 +103,6 @@ callbacks:
   lr_monitor: {}
   memory_monitor: {}
   runtime_estimator: {}
-
-loggers:
-  mlflow:
-    tracking_uri: databricks
-    experiment_name: /Workspace/Users/hiroshi.ouchiyama@databricks.com/mct_experiment
-    model_registry_uri: databricks-uc
-    model_registry_prefix: shared.hiouchiymct
   hf_checkpointer:
     overwrite: true
     precision: bfloat16
@@ -120,6 +113,13 @@ loggers:
       metadata:
         task: llm/v1/chat
     mlflow_registered_model_name: mpt-1b-hiouchiy
+
+loggers:
+  mlflow:
+    tracking_uri: databricks
+    experiment_name: /Workspace/Users/hiroshi.ouchiyama@databricks.com/mct_experiment
+    model_registry_uri: databricks-uc
+    model_registry_prefix: shared.hiouchiymct
 
 # loggers:
 #   wandb: {}

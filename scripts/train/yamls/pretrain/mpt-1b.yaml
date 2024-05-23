@@ -104,6 +104,12 @@ callbacks:
   memory_monitor: {}
   runtime_estimator: {}
 
+loggers:
+  mlflow:
+    tracking_uri: databricks
+    model_registry_uri: databricks-uc
+    model_registry_prefix: shared.hiouchiymct
+
 # loggers:
 #   wandb: {}
 

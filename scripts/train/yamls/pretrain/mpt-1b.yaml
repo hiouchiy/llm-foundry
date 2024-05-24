@@ -107,7 +107,7 @@ callbacks:
     overwrite: true
     precision: bfloat16
     save_folder: dbfs:/databricks/mlflow-tracking/{mlflow_experiment_id}/{mlflow_run_id}/artifacts/checkpoints
-    save_interval: 1ba
+    save_interval: 5ba
     mlflow_logging_config:
       task: llm/v1/chat
       metadata:
